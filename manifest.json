@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Twitch YouTube Keys",
+  "version": "1.0.0",
+  "description": "YouTube-style speed (< >) and seek (J/L, arrows, 0-9) shortcuts for Twitch VODs and clips.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.twitch.tv/*", "https://clips.twitch.tv/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

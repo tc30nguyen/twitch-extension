@@ -1,0 +1,22 @@
+#ytk-overlay {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2147483647;
+  margin: 0;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font: 600 20px/1.2 Roboto, Arial, sans-serif;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
+#ytk-overlay.visible {
+  opacity: 1;
+  transition: none;
+}
